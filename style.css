@@ -1,0 +1,148 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+
+body {
+    background-color: honeydew;
+    
+}
+
+#display-cube, #display-cylinder, #display-pyramid, #display-sphere {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    padding: 1em;
+    color: black;
+    margin: .2  em;
+    border: 2px solid red;
+    border-radius: 50px 20px;
+    background-color: white;
+}
+
+#total-cube, #total-cylinder, #total-pyramid, #total-sphere {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding: 1em;
+    text-decoration: underline;
+    color: black;
+    margin: 1em;
+    border: 2px solid red;
+    border-radius: 20px 50px;
+    background-color: white;
+    border-radius: 4;
+}
+
+input {
+    font-size: 1em;
+    margin: .5em;
+}
+
+label {
+    font-size: 1.5em;
+    margin: .5em;
+}
+
+.navbar {
+    background-color: honeydew;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1.2em;
+}
+
+.navbar-brand {
+    font-size: 2em;
+}
+
+
+
+ /* FROM https://html-online.com/articles/css3-cube/ */
+
+ #wrapD3Cube {
+    width: 250px;
+    height: 213px;
+    /* margin: 5px auto; */
+    /* background-color: #EEE; */
+}
+
+
+#D3Cube {
+    width: 112px;
+    height: 112px;
+    top: 50px;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
+    -moz-transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
+    -webkit-transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
+    margin: auto;
+    position: relative;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#D3Cube > div {
+    position: absolute;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 112px;
+    height: 112px;
+    float: left;
+    overflow: hidden;
+    opacity: 0.85;
+}
+#side1 {
+    transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotatex(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    background-color: #FFF;
+}
+#side2 {
+    transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    background-color: #ffaf1c;
+}
+#side3 {
+    transform: translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: translateX(0px) translateY(0px) translateZ(56px);
+    background-color: #58d568;
+}
+#side4 {
+    transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+    background-color: #ed3030;
+}
+#side5 {
+    transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+    background-color: #1c5ffe;
+}
+#side6 {
+    transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -moz-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    -webkit-transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+    background-color: #f2f215;
+}
+
+#cube, #pyramid, #cylinder, #sphere {
+    margin: 1.2em;
+}
+
+#cube-section, #pyramid-section, #cylinder-section, #sphere-section {
+    margin: 1.2em;
+}

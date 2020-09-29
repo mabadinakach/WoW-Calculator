@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WoW Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-light">
+        <div id="wrapD3Cube">
+            <div id="D3Cube">
+                <div id="side1"></div>
+                <div id="side2"></div>
+                <div id="side3"></div>
+                <div id="side4"></div>
+                <div id="side5"></div>
+                <div id="side6"></div>
+            </div>
+        </div>
+        <a class="navbar-brand" href="#">WoW Calculator</a>
+    </nav>
+    <main>
+        
+        <section id="cube-section">
+            <h1 id="title">Cube</h1>
+            <div id="cube">
+                <img src="images/cube.png" alt="" srcset="" width="150" height="150">
+            </div>
+            <div id="display-cube">Formula V = a^3</div>
+            <div id="total-cube">V = 0.00</div>
+            <label for="a-cube">a = </label>
+            <select name="a-cube" id="a-cube">
+                <option value="0">0</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+            </select>
+            
+        </section>
+
+        <section id="pyramid-section">
+            <h1 id="title">Pyramid</h1>
+            <div id="pyramid">
+                <img src="images/pyramid.png" alt="" srcset="" width="150" height="150">
+            </div>
+            <div id="display-pyramid">Formula: V = (1/3) × B × h</div>
+            <div id="total-pyramid">V = 0.00</div>
+            <label for="b-pyramid">B = </label>
+            <input id="b-pyramid" value="0.00" type="number" min="1">
+            <br>
+            <label for="h-pyramid">h = </label>
+            <input id="h-pyramid" value="0.00" type="number" min="1">
+        </section>
+
+        <section id="cylinder-section">
+            <h1 id="title">Cylinder</h1>
+            <div id="cylinder">
+                <img src="images/cylinder.png" alt="" srcset="" width="150" height="150">
+            </div>
+            <div id="display-cylinder">Formula: V = πr^2h</div>
+            <div id="total-cylinder">V = 0.00</div>
+            <label for="r-cylinder">r = </label>
+            <input id="r-cylinder" value="0.00" type="number" min="1">
+            <br>
+            <label for="h-cylinder">h = </label>
+            <input id="h-cylinder" value="0.00" type="number" min="1">
+        </section>
+        
+        <section id="sphere-section">
+            <h1 id="title">Sphere</h1>
+            <div id="sphere">
+                <img src="images/sphere.png" alt="" srcset="" width="150" height="150">
+            </div>
+            <div id="display-sphere">Formula: V = (4/3)πr^3</div>
+            <div id="total-sphere">V = 0.00</div>
+            <label for="r-sphere">r = </label>
+            <input id="r-sphere" value="0.00" type="number" min="1">
+        </section>
+        
+    </main>
+    <footer>
+        <p>Created by: Marcos Abadi</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
